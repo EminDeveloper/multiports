@@ -37,4 +37,7 @@ public class CustomTomcatConfiguration {
         }
         return result.toArray(new Connector[]{});
     }
+    public String changeconvert(String param){
+        return "changed";
+    }
 }
