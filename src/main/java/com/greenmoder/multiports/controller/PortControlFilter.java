@@ -50,7 +50,8 @@ public class PortControlFilter implements Filter {
             Method method = c.getClass().getDeclaredMethod(funcName, HttpServletRequest.class);
             res.getWriter().write(String.valueOf(method.invoke(c, req)));
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.printStackTrace(););
+            
         }
     }
 
